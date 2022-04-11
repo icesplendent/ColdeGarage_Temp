@@ -6,8 +6,15 @@
 # install dependencies
 $ npm install
 
+# for the latest version
+git checkout -b dev
+git remote add 
+git branch -u origin/dev
+git pull
+
 # serve with hot reload at localhost:3000
 $ npm run dev
+
 
 # build for production and launch server
 $ npm run build
