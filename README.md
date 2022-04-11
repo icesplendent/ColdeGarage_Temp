@@ -3,14 +3,11 @@
 ## Build Setup
 
 ```bash
+# for the latest version
+$ git clone -b dev git@github.com:icesplendent/ColdeGarage_Temp.git
+
 # install dependencies
 $ npm install
-
-# for the latest version
-git checkout -b dev
-git remote add 
-git branch -u origin/dev
-git pull
 
 # serve with hot reload at localhost:3000
 $ npm run dev
