@@ -1,5 +1,5 @@
 <template>
-  <div class="container1"></div>
+  <v-container class="container1"></v-container>
 </template>
 <script>
 export default {
@@ -19,7 +19,7 @@ h1 {
   display: flex;
   flex-direction: column;
 
-  background-image: url(../assets/src/FirstPageUp_com.png);
+  background-image: url(../assets/src/FirstPageUp_com_alt.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
   z-index: 10;

@@ -1,5 +1,6 @@
 <template>
-  <div class="container2">
+  <!-- <div class="container2"> -->
+  <v-container class="container2 pa-0">
     <div class="blocker1">
       <div class="subblock1_1"></div>
       <div class="app">
@@ -25,7 +26,8 @@
       <div v-for="(x, index) in subbridge2" :key="index" :class="x"></div>
     </div>
     <div class="blocker2"></div>
-  </div>
+  </v-container>
+  <!-- </div> -->
 </template>
 <script>
 import ColdeApp from "./ColdeApp.vue";
