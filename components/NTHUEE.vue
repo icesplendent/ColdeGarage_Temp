@@ -1,11 +1,8 @@
 <template>
   <v-dialog v-model="dialog" width="500">
     <template v-slot:activator="{ on, attrs }">
-      <!-- <v-btn color="red lighten-2" dark v-bind="attrs" v-on="on">
-              Click Me
-            </v-btn> -->
       <img
-        id="app"
+        id="nthuee"
         src="../assets/src/NTHU_EE_temp.png"
         alt=""
         v-bind="attrs"
@@ -14,9 +11,13 @@
     </template>
 
     <v-card>
-      <v-card-title class="text-h5 grey lighten-2"> NTHUEE </v-card-title>
+      <v-card-title
+        class="text-h5 yellow lighten-1 blue-grey--text text--lighten-1"
+      >
+        NTHUEE
+      </v-card-title>
 
-      <v-card-text>
+      <v-card-text class="pt-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -30,7 +31,15 @@
 
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="primary" text @click="dialog = false"> I accept </v-btn>
+        <v-btn
+          color="primary"
+          text
+          @click="dialog = false"
+          href="http://web.ee.nthu.edu.tw/"
+          target="_blank"
+        >
+          Learn more
+        </v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -47,8 +56,11 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 #nthuee {
   height: 38.5%;
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
 }
 </style>

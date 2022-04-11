@@ -28,7 +28,7 @@
   </div>
 </template>
 <script>
-import ColdeApp from "./coldeApp.vue";
+import ColdeApp from "./ColdeApp.vue";
 import ColdeWeb from "./ColdeWeb.vue";
 import ColdePython from "./ColdePython.vue";
 import Nthuee from "./NTHUEE.vue";

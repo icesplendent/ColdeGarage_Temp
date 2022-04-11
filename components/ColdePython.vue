@@ -1,9 +1,6 @@
 <template>
   <v-dialog v-model="dialog" width="500">
     <template v-slot:activator="{ on, attrs }">
-      <!-- <v-btn color="red lighten-2" dark v-bind="attrs" v-on="on">
-              Click Me
-            </v-btn> -->
       <img
         id="python"
         src="../assets/src/Python.png"
@@ -14,9 +11,13 @@
     </template>
 
     <v-card>
-      <v-card-title class="text-h5 grey lighten-2"> Python Team </v-card-title>
+      <v-card-title
+        class="text-h5 yellow lighten-1 blue-grey--text text--lighten-1"
+      >
+        Python Team
+      </v-card-title>
 
-      <v-card-text>
+      <v-card-text class="pt-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -30,7 +31,7 @@
 
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="primary" text @click="dialog = false"> I accept </v-btn>
+        <v-btn color="primary" text @click="dialog = false"> Join us </v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -47,8 +48,11 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 #python {
-  height: 40%;
+  height: 39%;
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
 }
 </style>
